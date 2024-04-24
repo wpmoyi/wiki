@@ -2,7 +2,8 @@
 # Uart通信
 ## Uart概述
 - Uart，一种双向、串行、异步的通信总线，仅需一根数据传送和一根数据接收线便能实现全双工通信。
-- 典型串口通信仅需3根线便可以完成：数据发送线(TX)，数据接收线(RX)以及地线(GND)。通信时双方RX、TX交叉链接且GND线互连才能完成正常通信。
+- 典型串口通信仅需3根线便可以完成：数据发送线(TX)，数据接收线(RX)以及地线(GND)。通信时双方RX、TX交叉链接且GND线互连才能完成正常通信。<br>
+![jiexian](./resource/jiexian.png)
 ## Uart通信协议
 - Uart传输以数据包的传输方式将数据传送给接收方，数据包由起始位、数据帧、奇偶校验位和停止位组成。<br>
 ![uart packet](./resource/datapacket.png "数据包")
@@ -32,5 +33,17 @@
 |最大从机数量|1|
 ## Uart通信步骤
 ### first
-- 发送方Uart<br>
+- 发送方Uart从总线接收并行传输的数据。<br>
 ![one](./resource/stepone.png)
+### second
+- 发送方Uart添加起始位、奇偶校验位、停止位与数据帧组成包。<br>
+![second](./resource/steptwo.png)
+### third
+- 发送方将数据包按起始位->停止位的顺序串行发送，接收方Uart以预先设置好的波特率读取数据包内容。<br>
+![third](./resource/stepthree.png)
+### forth
+- 接收方Uart收到数据包后，丢弃起始位、奇偶校验位以及停止位。<br>
+![forth](./resource/stepfour.png)
+### fifth
+- 接收方Uart将串行数据转换回并行，并将其传输到接收端Uart的数据总线。<br>
+![five](./resource/stepfive.png)
