@@ -36,16 +36,16 @@
 ## Uart通信步骤
 ### first
 - 发送方Uart从总线接收并行传输的数据。<br>
-![one](./resource/stepfive.PNG)
+![one](./resource/stepone.PNG)
 ### second
 - 发送方Uart添加起始位、奇偶校验位、停止位与数据帧组成包。<br>
-![second](./resource/stepfive.PNG)
+![second](./resource/steptwo.PNG)
 ### third
 - 发送方将数据包按起始位->停止位的顺序串行发送，接收方Uart以预先设置好的波特率读取数据包内容。<br>
-![third](./resource/stepfive.PNG)
+![third](./resource/stepthree.PNG)
 ### forth
 - 接收方Uart收到数据包后，丢弃起始位、奇偶校验位以及停止位。<br>
-![forth](./resource/stepfive.PNG)
+![forth](./resource/stepfour.PNG)
 ### fifth
 - 接收方Uart将串行数据转换回并行，并将其传输到接收端Uart的数据总线。<br>
 ![five](./resource/stepfive.PNG)
