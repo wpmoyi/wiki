@@ -49,4 +49,3 @@
 ### fifth
 - 接收方Uart将串行数据转换回并行，并将其传输到接收端Uart的数据总线。<br>
 ![five](./resource/stepfive.PNG)
-1
