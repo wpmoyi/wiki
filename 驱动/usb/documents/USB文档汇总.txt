@@ -1,0 +1,37 @@
+[总体]
+usb_20.pdf	USB 2.0协议
+C5	数据传输
+C8	协议成
+C9	DEVICE框架，以及常用数据结构
+{C10}	HOST框架
+{C11}	HUB框架
+
+{USB_3_1_r1.0.pdf}	USB 3.0协议
+
+USB_org - Defined 1_0 Class Codes.mht	Class列表
+
+[驱动]
+musbmhdrc_pspgUSB控制器芯片手册.pdf	AM3352 USB 核心
+
+{sl811hst-axc.pdf}			9263外置USB芯片
+{OHCI_10A.PDF}				OHCI规范
+
+[U盘]
+usbmassbulk_10.pdf		MSC协议
+
+usbmass-ufi10.pdf		UFI命令（SCSI命令子集）
+
+{SCSI-3-commandset.pdf}		SCSI命令
+
+
+[串口/网络]
+CDC120-20101103-track.pdf	CDC协议
+
+PSTN120.pdf			ACM模式
+
+Remote NDIS(RNDIS)		（MSDN中，未收录）RNDIS协议
+
+[HID]
+HID1_11.pdf		HID协议
+
+Hut1_12v2.pdf		HID协议实现
